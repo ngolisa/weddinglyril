@@ -2,9 +2,11 @@
 
 <div class="cards">
   <% @rooms.each do |room| %>
+  <%= link_to room_path(room) do %>
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80)">
     <%= room.name %>
   </div>
+  <% end %>
   <% end %>
 
 </div>
