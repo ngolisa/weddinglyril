@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+optionA = Room.new(name:"Option A", capacity: 2, number_of_days: 3, type_of_the_room: 'Deluxe')
+optionA.save!
+
+optionB = Room.new(name:"Option B", capacity: 3, number_of_days: 3, type_of_the_room: 'Deluxe')
+optionB.save!

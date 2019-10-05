@@ -1,2 +1,8 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);">
+  <div class="container">
+    <h1>Welcome to <strong>Laura and Cyril's wedding</strong> !</h1>
+    <p>Bienvenue sur le site du mariage</p>
+    <%= link_to "Bienvenue", rooms_path, class: 'btn btn-welcome' %>
+
+  </div>
+</div>
