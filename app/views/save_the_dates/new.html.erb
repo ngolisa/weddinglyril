@@ -3,13 +3,15 @@
     <%= cl_image_tag("https://res.cloudinary.com/dpcd0je1d/image/upload/v1570448228/lisa/save_hyhbqb.jpg") %>
   </div>
   <div class="justify-content-center align-items-center col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-
-    <h1>Répondre à Laura et Cyril</h1>
+    <div class="confirmation-presence">
+      <%= cl_image_tag("lisa/fe78ff5f-e1df-4e3e-bca6-86d94afb3713_pjlvsk.jpg", :height=>80, :width=>300, :crop=>"scale") %>
+    </div>
     <%= simple_form_for @save_the_date do |f| %>
-    <%= f.input :first_name %>
-    <%= f.input :last_name %>
-    <%= f.input :present %>
-    <%= f.input :comment %>
+    <%= f.input :name, label: "NOM ET PRENOM" %>
+    <%= f.input :number_of_invites, default:1, label: "NOUS SERONS:" , collection: [1, 2, 3, 4, 5], :as => :radio_buttons%>
+    <%= f.input :present, label:"OUI, JE SERAI PRESENT-E" %>
+    <%= f.input :present, label:"JE SERAI PRESENT-E AU MARIAGE CIVIL LE 4 JUIN 2020" %>
+    <%= f.input :comment, label: "LAISSEZ NOUS UN PETIT MOT: " %>
     <%= f.button :submit, class: 'btn btn-flat' %>
     <% end %>
 
