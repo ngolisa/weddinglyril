@@ -6,16 +6,18 @@
   <div class="justify-content-center align-items-center col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
     <div class="confirmation-presence">
       <br>
-      <h3><strong>Confirmation de votre presence:</strong></h3>
+
+      <h3 class="text-center">Confirmation de votre presence:</h3>
+
     </div>
     <div class="form-save-the-date">
       <%= simple_form_for @save_the_date do |f| %>
-      <%= f.input :name, label: "NOM ET PRENOM" %>
-      <%= f.input :present, label:"OUI, JE SERAI PRESENT-E" %>
-      <%= f.input :number_of_invites, default:0, label: "NOUS SERONS:" , collection: [0, 1, 2, 3, 4, 5]%>
-      <%= f.input :mairie, label:"NON, MAIS JE SERAI PRESENT-E AU MARIAGE CIVIL LE 4 JUIN 2020" %>
-      <%= f.input :rien, label:"NON, MAIS JE PENSERAI A VOUS" %>
-      <%= f.input :comment, label: "LAISSEZ NOUS UN PETIT MOT: " %>
+      <%= f.input :name, label: "Nom et Prénom" %>
+      <%= f.input :present, label:"Oui, je serai présent-e !" %>
+      <%= f.input :number_of_invites, default:0, label: "Nous serons:" , collection: [0, 1, 2, 3, 4, 5]%>
+      <%= f.input :mairie, label:"Non, mais je serai présent(e) au mariage civil à Paris" %>
+      <%= f.input :rien, label:"Non, mais je penserai à vous !" %>
+      <%= f.input :comment, label: "Laissez nous un petit mot: " %>
       <%= f.button :submit, label:"SAVE THE DATE", class: 'btn btn-light' %>
       <% end %>
     </div>
