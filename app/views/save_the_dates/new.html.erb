@@ -7,10 +7,9 @@
     <div class="confirmation-presence">
       <br>
 
-      <h3 class="text-center">Confirmation de votre presence:</h3>
+      <h3 class="form-save-the-date">Confirmation de votre presence:</h3>
 
-    </div>
-    <div class="form-save-the-date">
+
       <%= simple_form_for @save_the_date do |f| %>
       <%= f.input :name, label: "Nom et Prénom" %>
       <%= f.input :present, label:"Oui, je serai présent-e !" %>
@@ -20,6 +19,7 @@
       <%= f.input :comment, label: "Laissez nous un petit mot: " %>
       <%= f.button :submit, label:"SAVE THE DATE", class: 'btn btn-light' %>
       <% end %>
+
     </div>
 
   </div>
