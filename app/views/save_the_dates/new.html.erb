@@ -1,0 +1,20 @@
+
+
+
+<div class="row">
+  <div class="col-6 col-sm-12 col-md-6">
+    <img src="../../assets/images/save.jpg" alt="">
+  </div>
+  <div class="col-6 col-sm-12 col-md-6">
+    <div class="form-container">
+      <h1>Répondre à Laura et Cyril</h1>
+      <%= simple_form_for @save_the_date do |f| %>
+      <%= f.input :first_name %>
+      <%= f.input :last_name %>
+      <%= f.input :present %>
+      <%= f.input :comment %>
+      <%= f.button :submit, class: 'btn btn-flat' %>
+      <% end %>
+    </div>
+  </div>
+</div>
