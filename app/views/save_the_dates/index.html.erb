@@ -16,9 +16,9 @@
     <tr>
       <th scope="row"><%= answer.name %></th>
       <td><%= answer.number_of_invites %></td>
-      <td><%= answer.present %></td>
-      <td><%= answer.mairie %></td>
-      <td><%= answer.rien %></td>
+      <td><%= "✅" if answer.present %></td>
+      <td><%= "✅" if answer.mairie %></td>
+      <td><%= "✅" if answer.rien %></td>
       <td><%= answer.comment %></td>
 
       <%  %>

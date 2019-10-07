@@ -23,9 +23,8 @@
           <%= f.input :number_of_invites, default:0, label: "Nous serons:" , collection: [0, 1, 2, 3, 4, 5], input_html: { :style=> 'width: 25%;', :rows => 4}%>
         </div>
       </div>
-      <br>
       <%= f.input :mairie, label:"Non, mais je serai présent(e) au mariage civil à Paris" %>
-      <%= f.input :rien, label:"Non, mais je penserai à vous !" %>
+      <%= f.input :rien, label:"Je ne vais pas pouvoir mais je penserai à vous !" %>
       <%= f.input :comment, label: "Laissez nous un petit mot: ", :as => :text, input_html: { :style=> 'width: 100%;', :rows => 4} %>
       <%= f.submit "ENVOYER", class: 'btn btn-send' %>
       <% end %>
@@ -33,5 +32,7 @@
 
     </div>
   </div>
+
+
 
 
