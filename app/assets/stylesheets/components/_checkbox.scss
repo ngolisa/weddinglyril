@@ -1,0 +1,101 @@
+.checkbox * {
+  cursor: pointer;
+}
+.checkbox {
+  padding-left: 20px;
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+}
+
+.checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 5px;
+}
+
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  margin-left: -20px;
+  border: 1px solid #555;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.checkbox label::after {
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 2px;
+  margin-left: -21px;
+  padding-left: 3px;
+  padding-top: 1px;
+  font-size: 11px;
+  color: #555555;
+}
+
+.checkbox input[type="checkbox"]{
+  opacity: 0;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+}
+
+
+.checkbox input[type="checkbox"]:checked + label::after{
+  font-family: "FontAwesome";
+  content: "\f00c";
+}
+
+.checkbox.checkbox-circle label::before {
+  border-radius: 50%;
+}
+
+.checkbox.checkbox-inline {
+  margin-top: 0;
+}
+
+.checkbox-red    input[type="checkbox"]:checked + label::after,
+.checkbox-yellow input[type="checkbox"]:checked + label::after,
+.checkbox-green  input[type="checkbox"]:checked + label::after,
+.checkbox-blue   input[type="checkbox"]:checked + label::after,
+.checkbox-black  input[type="checkbox"]:checked + label::after
+{color: #fff;}
+
+.checkbox-red input[type="checkbox"] + label::before
+{background-color: #990000;  border-color: #990000;}
+
+.checkbox-yellow input[type="checkbox"] + label::before
+{background-color: #face00;  border-color: #face00;}
+
+.checkbox-green input[type="checkbox"] + label::before
+{background-color: #008000;  border-color: #008000;}
+
+.checkbox-blue input[type="checkbox"] + label::before
+{background-color: #428bca;  border-color: #428bca;}
+
+.checkbox-black input[type="checkbox"] + label::before
+{background-color: #000000;  border-color: #000000;}
+
+
+
+
+
+
+
+input[type="checkbox"].styled:checked + label:after {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+}
+
