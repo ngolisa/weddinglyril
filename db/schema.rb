@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_07_122717) do
+ActiveRecord::Schema.define(version: 2019_10_07_131319) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2019_10_07_122717) do
     t.string "name"
     t.integer "number_of_invites"
     t.boolean "mairie"
+    t.boolean "rien", default: true
   end
 
 end

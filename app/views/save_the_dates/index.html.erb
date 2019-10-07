@@ -1,0 +1,29 @@
+<h1>Ceux qui ont répondus</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nom</th>
+      <th scope="col">Nombre d'invités</th>
+      <th scope="col">Présent à Marrakech</th>
+      <th scope="col">Présent à la mairie</th>
+      <th scope="col">Pas là du tout</th>
+      <th scope="col">Petit mot</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @save_the_dates.each do |answer| %>
+    <tr>
+      <th scope="row"><%= answer.name %></th>
+      <td><%= answer.number_of_invites %></td>
+      <td><%= answer.present %></td>
+      <td><%= answer.mairie %></td>
+      <td><%= answer.rien %></td>
+      <td><%= answer.comment %></td>
+
+      <%  %>
+      <td><%=  %></td>
+    </tr>
+    <%end%>
+  </tbody>
+</table>

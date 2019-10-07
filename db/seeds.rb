@@ -5,7 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+SaveTheDate.destroy_all
 Room.destroy_all
+
 
 optionA = Room.new(name:"Option A", capacity: 2, number_of_days: 2, type_of_the_room: 'Deluxe')
 optionA.save!

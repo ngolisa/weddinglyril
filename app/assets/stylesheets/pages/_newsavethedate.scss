@@ -7,3 +7,11 @@
   width:50vh;
   height:100px;
 }
+
+.form-save-the-date{
+  padding: 20px;
+}
+
+.was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label {
+  color: #4F4D4D !important;
+}
