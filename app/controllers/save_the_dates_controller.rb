@@ -14,10 +14,13 @@ class SaveTheDatesController < ApplicationController
   def create
     @save_the_date = SaveTheDate.new(save_params)
     if @save_the_date.save
-      redirect_to root_path
+      redirect_to confirmed_path
     else
       render 'new'
     end
+  end
+
+  def confirmed
   end
 
   private
