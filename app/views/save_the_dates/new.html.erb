@@ -1,5 +1,5 @@
 
-<div class="row pagesavedate">
+<div class="row pagesavedate hid-overflow">
   <div class="savedate col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
     <%= cl_image_tag("https://res.cloudinary.com/dpcd0je1d/image/upload/v1570448228/lisa/save_hyhbqb.jpg") %>
   </div>
@@ -20,7 +20,7 @@
           <%= f.input :present, label:"Oui, je serai présent(e) !" %>
         </div>
         <div class="col-sm">
-          <%= f.input :number_of_invites, default:0, label: "Nous serons :" , collection: [0, 1, 2, 3, 4, 5], input_html: { :style=> 'width: 25%;', :rows => 4}%>
+          <%= f.input :number_of_invites, default:0, label: "     | Nous serons :" , collection: [0, 1, 2, 3, 4, 5], input_html: { :style=> 'width: 25%;', :rows => 4}%>
         </div>
       </div>
       <%= f.input :mairie, label:"Non, mais je serai présent(e) au mariage civil à Paris" %>
@@ -32,6 +32,7 @@
 
     </div>
   </div>
+</div>
 
 
 
