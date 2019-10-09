@@ -19,7 +19,7 @@
           <%= f.input :present, label:"Oui, je serai présent(e) !", class: "checkbox", input_html: { id: "1" } %>
         </div>
         <div class="col-sm">
-          <%= f.input :number_of_invites, default:0, label: "     | Nous serons : " , collection: [0, 1, 2, 3, 4, 5], input_html: { :style=> 'width: 25%;', :rows => 4}%>
+          <%= f.input :number_of_invites, default:0, label: "     | Nous serons : " , collection: [0, 1, 2, 3, 4, 5], input_html: {id: "4", :style=> 'width: 25%;', :rows => 4}%>
         </div>
       </div>
       <%= f.input :mairie, label:"Non, mais je serai présent(e) au mariage civil à Paris", class: "checkbox", input_html: { id: "2" }  %>
@@ -67,10 +67,26 @@
 
   }
 
+  function unable() {
+    if (checkbox2.checked) {
+      document.getElementById("4").disabled = true;
+    }
+    else if (checkbox3.checked) {
+      document.getElementById("4").disabled = true;
+    }
+    else {
+      document.getElementById("4").disabled = false;
+    }
+  }
+
 
   checkbox1.addEventListener('change', handleChecked1)
   checkbox2.addEventListener('change', handleChecked2)
   checkbox3.addEventListener('change', handleChecked3)
+
+  checkbox1.addEventListener('change', unable)
+  checkbox2.addEventListener('change', unable)
+  checkbox3.addEventListener('change', unable)
 
 </script>
 
