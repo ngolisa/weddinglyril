@@ -20,8 +20,29 @@ class SaveTheDatesController < ApplicationController
     end
   end
 
+
+  def edit
+    @save_the_date = SaveTheDate.find(params[:id])
+  end
+
+  def update
+    @save_the_date = SaveTheDate.find(params[:id])
+    if @save_the_date.update(save_params)
+      redirect_to save_the_dates_path(@save_the_date)
+    else
+      render 'update'
+    end
+  end
+
+  def destroy
+    @save_the_date = SaveTheDate.find(params[:id])
+    @save_the_date.destroy
+    redirect_to save_the_dates_path
+  end
+
   def confirmed
   end
+
 
   private
 

@@ -9,6 +9,8 @@
       <th scope="col">💒</th>
       <th scope="col">❌</th>
       <th scope="col">Petit mot 📋</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
@@ -20,6 +22,8 @@
       <td><%= "💒" if answer.mairie %></td>
       <td><%= "❌" if answer.rien %></td>
       <td><%= answer.comment %></td>
+      <td> <%= link_to "🗒", edit_save_the_date_path(answer) %></td>
+      <td></td>
 
       <%  %>
       <td><%=  %></td>
