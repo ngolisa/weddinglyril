@@ -18,11 +18,11 @@
     <tr>
       <th scope="row"><%= answer.name %></th>
       <td><%= answer.number_of_invites %></td>
-      <td><%= "🐪" if answer.present %></td>
-      <td><%= "💒" if answer.mairie %></td>
-      <td><%= "❌" if answer.rien %></td>
+      <td><%= answer.present ? "🐪" : "-" %></td>
+      <td><%= answer.mairie ? "💒" : "-" %></td>
+      <td><%= answer.rien ? "❌" : "-" %></td>
       <td><%= answer.comment %></td>
-      <td> <%= link_to "🗒", edit_save_the_date_path(answer) %></td>
+      <td> <%= link_to "Edit", edit_save_the_date_path(answer) %></td>
       <td></td>
 
       <%  %>
