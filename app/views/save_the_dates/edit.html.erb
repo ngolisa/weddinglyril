@@ -3,6 +3,7 @@
 <%= simple_form_for @save_the_date do |f| %>
 
 
+<%= f.input :name, label: "Nom et Prénom : " %>
 <div class="row">
   <div class="col-sm">
     <%= f.input :present, label:"Oui, je serai présent(e) !", class: "checkbox", input_html: { id: "1" } %>
