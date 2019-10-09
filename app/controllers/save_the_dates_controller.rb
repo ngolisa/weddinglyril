@@ -28,7 +28,7 @@ class SaveTheDatesController < ApplicationController
   def update
     @save_the_date = SaveTheDate.find(params[:id])
     if @save_the_date.update(save_params)
-      redirect_to save_the_dates_path(@save_the_date)
+      redirect_to save_the_dates_path
     else
       render 'update'
     end
