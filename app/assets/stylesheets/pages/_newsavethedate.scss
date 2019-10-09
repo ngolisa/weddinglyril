@@ -49,6 +49,14 @@
   }
 }
 
+@media only screen and (max-width: 1200px){
+  .message-confirmation img{
+    width:100%;
+    height: 100%;
+  }
+}
+
+
 .message-confirmation {
   text-align: center;
 }
