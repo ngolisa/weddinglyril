@@ -2,6 +2,7 @@ class SaveTheDatesController < ApplicationController
 
   def index
     @save_the_dates = SaveTheDate.all
+    @saves = Save.all
   end
 
   def show
