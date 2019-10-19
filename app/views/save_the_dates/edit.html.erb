@@ -18,6 +18,11 @@
 <%= f.submit "ENVOYER", class: 'btn btn-send' %>
 <% end %>
 
+<%= link_to "Delete", save_the_date_path(@save_the_date),
+method: :delete,
+data: { confirm: "Are you sure?" }, class:"btn-del" %>
+
+
 
 <script>
 

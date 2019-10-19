@@ -19,6 +19,11 @@
 <% end %>
 
 
+<%= link_to "Delete", safe_path(@save),
+method: :delete,
+data: { confirm: "Are you sure?" }, class:"btn-del" %>
+
+
 <script>
 
   const checkbox1 = document.getElementById("1");

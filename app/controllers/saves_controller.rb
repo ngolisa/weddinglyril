@@ -25,6 +25,12 @@ class SavesController < ApplicationController
     end
   end
 
+  def destroy
+    @save = Save.find(params[:id])
+    @save.destroy
+    redirect_to save_the_dates_path
+  end
+
   private
 
   def save_params
