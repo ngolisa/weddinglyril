@@ -1,5 +1,4 @@
 class SaveTheDatesController < ApplicationController
-
   def index
     @save_the_dates = SaveTheDate.all
     @saves = Save.all
@@ -20,7 +19,6 @@ class SaveTheDatesController < ApplicationController
       render 'new'
     end
   end
-
 
   def edit
     @save_the_date = SaveTheDate.find(params[:id])
@@ -44,10 +42,9 @@ class SaveTheDatesController < ApplicationController
   def confirmed
   end
 
-
   private
 
   def save_params
-    params.require(:save_the_date).permit(:name, :present, :mairie, :rien, :number_of_invites, :comment )
+    params.require(:save_the_date).permit(:name, :present, :mairie, :rien, :number_of_invites, :comment)
   end
 end
