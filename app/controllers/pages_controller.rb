@@ -2,6 +2,6 @@ class PagesController < ApplicationController
   def home
   end
 
-  def programme
+  def infos
   end
 end

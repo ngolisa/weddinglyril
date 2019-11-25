@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   resources :rooms
   resources :save_the_dates
   resources :saves
-  get '/programme', to: "pages#programme"
+  get '/infos', to: "pages#infos"
   get '/confirmed', to: "save_the_dates#confirmed"
 end
